@@ -3,7 +3,7 @@ import html from '../library/core.js'
 function header() {
     return html`
                 <header class="header">
-                    <h1>To Do List</h1>
+                    <h1>To Do App</h1>
                     <input 
                         class="new-todo" 
                         placeholder="What needs to be done?" 
