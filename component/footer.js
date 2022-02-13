@@ -2,13 +2,11 @@ import html from '../library/core.js'
 import { connect } from '../library/store.js'
 
 function footer({ todos, filter, filters }) {
-    const tasks = ['Tất cả', 'Chưa làm', 'Hoàn thành']
-
     return html`
         <footer class="footer">
             <span class="todo-count">
                 <strong>${todos.filter(filters.active).length}</strong> 
-                ${todos.filter(filters.active).length > 1 ? 'jobs to do' : 'job to do'}
+                ${todos.filter(filters.active).length >1 ? 'jobs to do' : 'job to do'}
             </span>
             <ul class="filters">
                 ${Object.keys(filters).map(type => html`
