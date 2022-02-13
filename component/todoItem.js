@@ -7,7 +7,7 @@ function todoItem({ todo, index, editIndex }) {
                 <div class="view">
                     <input class = "toggle" type = "checkbox" ${todo.completed && 'checked'} onchange = "dispatch('toggle', ${index})">
 
-                    <label ondblclick="dispatch('startEdit', ${index})"> ${todo.title}</label>
+                    <label ondblclick="dispatch('startEdit', ${index})">${index+1}. ${todo.title}</label>
 
                     <button class="destroy" onclick = "dispatch('destroy', ${index})"></button>
                 </div>
