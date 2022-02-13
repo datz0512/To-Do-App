@@ -3,7 +3,7 @@
   --pri-text: #000;
   --sub-text: rgb(131, 131, 131);
   --pri-bg: rgb(192, 192, 192);
-  --color-footer: #fff;
+  --color-footer: rgb(0, 0, 0);
 }
 
 html {
