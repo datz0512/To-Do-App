@@ -1,7 +1,7 @@
 :root {
   --pri-todo: rgb(224, 147, 3);
   --pri-text: #000;
-  --sub-text: rgb(95, 94, 94);
+  --sub-text: rgb(131, 131, 131);
   --pri-bg: rgb(192, 192, 192);
   --color-footer: #fff;
 }
@@ -54,7 +54,6 @@ body {
 }
 
 .todoapp {
-  /* overflow: hidden; */
   border-radius: 10px;
   background: var(--pri-todo);
   margin: 130px 0 40px 0;
@@ -152,7 +151,7 @@ body {
 .toggle-all + label:before {
   content: "❯";
   font-size: 22px;
-  color: #e6e6e6;
+  color: #491313;
   padding: 10px;
 }
 
@@ -170,16 +169,6 @@ body {
   position: relative;
   font-size: 24px;
   border-bottom: 1px solid #ededed;
-}
-
-.todo-list li:last-child {
-  /* border-bottom: none; */
-
-}
-
-.todo-list li.editing {
-  /* border-bottom: none; */
-  /* padding: 0; */
 }
 
 .todo-list li.editing .edit {
@@ -280,9 +269,6 @@ body {
   justify-content: space-between;
 }
 
-.todo-count {
-}
-
 .todo-count strong {
   font-weight: 300;
 }
@@ -342,8 +328,6 @@ html .clear-completed:active {
 }
 
 @media (max-width: 739px) {
-  html {
-  }
   .todoapp {
     margin: 100px 20px;
   }

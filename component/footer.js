@@ -7,7 +7,7 @@ function footer({ todos, filter, filters }) {
     return html`
         <footer class="footer">
             <span class="todo-count">
-                <strong>${todos.filter(filters.active).length}</strong> work
+                <strong>${todos.filter(filters.active).length}</strong> work to do
             </span>
             <ul class="filters">
                 ${Object.keys(filters).map(type => html`
